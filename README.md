@@ -1,6 +1,6 @@
-# 🧩 Dijkstra Concorrente em Go
+# Dijkstra Concorrente em Go
 
-## 🚀 Problema Abordado
+## Problema Abordado
 
 Encontrar o **caminho de menor custo** em um grafo grande pode ser custoso.
 Quando o grafo possui muitos nós e arestas, algoritmos sequenciais são ineficientes
@@ -9,7 +9,7 @@ Essa solução aborda a idéia de explorar múltiplos nós concorrentemente, bus
 
 ---
 
-## 💡 Implementação
+## Implementação
 
 * **Grafo gerado aleatoriamente** com `n` nós e `m` arestas por nó.
 * **Dijkstra concorrente**: múltiplas goroutines exploram vizinhos em paralelo, com controle de threads para evitar overhead.
@@ -17,7 +17,7 @@ Essa solução aborda a idéia de explorar múltiplos nós concorrentemente, bus
 
 ---
 
-## 🖨️ Saída:
+## Saída:
 
 Ao executar o programa, imprime:
 
@@ -34,7 +34,7 @@ Tempo total de execução: 12.345ms
 
 ---
 
-## ⚙️ Como Rodar
+## Como Rodar
 
 1. Clone o projeto e entre na pasta:
 
@@ -55,5 +55,5 @@ go mod tidy
 go run main.go
 ```
 
-## 🧠 Observações
+## Observações
 * Controle de **threads (`maxThreads`)** evita excesso de goroutines, equilibrando concorrência e desempenho.
